@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*basic reset*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none;
+	margin: 0px; 
+	padding: 0px;
+	display: inline-block;
+	border-bottom: solid 4px #DDD;
+}
+
+/*html selectors*/
+
+p
+{
+	font-family: "Montserrat", serif;
+	font-size: 24px;
+	color: #333;
+	background: #CCDFE6;
+	margin-top: 0px;
+	border-bottom: solid 4px #DDD;
+	padding-right: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+body 
+{
+	font-family: "Century Gothic", Century Gothic, Century Gothic, sans-serif;
+	font-size: 24px;
+	color: #333;
+	background: #CAE3D4;
+}
+
+nav
+{
+	font-family: "Century Gothic", Century Gothic, sans-serif;
+	font-size: 12px;
+	color: #C3E6DF;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	flex-direction: right;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  color: #C3E6DF;
+  border-color: #C3E6DF;
+  font-family: "Century Gothic", Century Gothic, sans-serif;
+  font-weight: bold;
+  background-color: #add5dd;
+  font-size: 20px;
+}
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration: none;
+ 	color: #789fa7;	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration: underline; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #ABD1CB;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 1450px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	font-family: "Muli", serif;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 1px #DDD;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 200px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	padding-top: 200px;
+	padding-right: 50px;
+	font-size: 30px;
+	margin-left: 1000px;
+	width: 650px;
+
+}
+
+#submit {
+
+  display: block;
+  width: 130px;
+  height: 45px;
+  text-align: center;
+  color: #A22121;
+  border-color: #A22121;
+  font-family: "Century Gothic", Century Gothic, sans-serif;
+  font-weight: bold;
+  background-color: #E7695E;
+  font-size: 20px;
+}
+
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#promoText 
+{
+	margin-right: 500px;
+	display: flex;
+	flex-direction: row;
+	margin-right: auto;
+	text-align: justify;
+}
+
+#promoImage 
+{
+	border-style: solid;
+	border-top-width: 7px;
+	border-left-width: 7px;
+	border-right-width: 7px;
+	border-bottom-width: 7px;
+	border-color: #A1D6CB;
+	display: inline-box;
+	flex-direction: row;
+	margin-right: auto;
+	height: 345px;
+	
+}
+
+#productInfo 
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 20px;
+}
+
+.productDesc 
+{
+	width: 700px;
+	height: 160px;
+	padding-top: 30px;
+}
+
+#mainFooter 
+{
+	font-size: 24px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#footerNav 
+{
+	width: 500px;
+}
+
+#copyRight 
+{
+	justify-content: center;
+	margin-left: auto;
+	width: 254px;
+	background-color: #647D78;
+	border-color: #4D5453;
+	border-style: solid;
+	border-top-width: 7px;
+	border-left-width: 7px;
+	border-right-width: 7px;
+	border-bottom-width: 7px;
+}
+
+#contentCon {
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#productImages 
+{
+	margin-top: 20px;
+	border-bottom: solid 1px #28302F;
+	padding-bottom: 20px;
+	display: flex-start;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+#productImages p
+{
+	line-height: 250px;
+}
+
+.productImg 
+{
+	width: 280px;
+}
+
+#contentAreaBig
+{
+	margin-top: 15px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 15px;
+}
+
+#productDescLargeLeft 
+{
+	padding-top: 20px;
+	height: 200px;
+	width: 1260px;
+	text-align: justify;
+}
+
+#productDescLargeRight 
+{
+	width: 410px;
+}
+
